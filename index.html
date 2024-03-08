@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>garden songs by eden</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta content='IE=7, IE=9' http-equiv='X-UA-Compatible' />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/index.css">
+
+        <script src="js/success.js"></script>
+    </head>
+    <body>
+        <div class="wrapper" id="main">
+            <div class="container">
+                <div class="header">
+                    <h1 class="title">garden songs</h1>
+                    <span class="byline">by eden</span>
+                </div>
+                <div class="description">sowing some seeds, singing in the harvest</div>
+                <div class="view-messages">
+                    <a id="view-messages-link" href="archive.html">view letter archive</a>
+                </div>
+                
+                
+
+                <form name='submit-to-google-sheet' id="signup-form">
+	                    
+	                    <div class="email-group">
+                            <label for="email" class="sr-only">Email</label>
+	                        <input type="email" id="email" name="email" value="" placeholder='email@example.com' />
+	                        <button class="button" type="submit">Subscribe</button>
+	                    </div>
+	                    
+	                    
+                </form>
+
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwphiQqAK8G0WJTHIwcgSgbs-_2HtubQe4rz0XJLFwgs95uZ-liCRMhVgTWd_zx0mLooA/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
+
+            </div>
+        </div>
+    </body>
+</html>
+
