@@ -1,7 +1,7 @@
   
   @font-face {
-    font-family: 'serif';
-    src: url('fonts/EB_Garamond/static/EBGaramond-Regular.ttf');
+    font-family: 'Perpetua';
+    src: url('../fonts/Perpetua/Perpetua.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     font-size: 14px;
     text-align: left;
     color: #111111;
@@ -18,7 +18,7 @@
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
-}
+
   
   a {
     color: unset;
@@ -123,6 +123,16 @@
   
   .nobreak {
     white-space: nowrap;
+  }
+
+  .bodytext a {
+    color: #107daf;
+    text-decoration: none;
+  }
+  
+  .bodytext a:hover {
+    color: #f3ab25;
+    cursor: pointer;
   }
 
   .container {
@@ -231,7 +241,7 @@
   #navigation {
     padding: 10px;
     font-size: 16px;
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
   }
   #navigation a{
     color: #ed1f22;

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'serif';
-    src: url('../fonts/EB_Garamond/static/EBGaramond-Regular.ttf');
+    font-family: 'Perpetua';
+    src: url('../fonts/Perpetua/Perpetua.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -19,6 +19,7 @@ body {
 }
 h1 {
     font-weight: normal;
+    font-family: 'Perpetua';
     font-size: 45px;
     line-height: 60px;
     margin-bottom: 5px;
@@ -32,7 +33,7 @@ a {
     color: #336699;
 }
 textarea {
-    font: 12px/18px Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font: 12px/18px;
 }
 .header {
     padding-bottom: 15px;
@@ -69,7 +70,7 @@ textarea {
 /* Form */
 
 form {
-    font: 16px/20px Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font: 16px/20px 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     display: block;
     padding: 6px 0 10px 0;
 }
@@ -118,7 +119,7 @@ label {
     color: #5ca000;
     margin: 10px 0;
     padding: 10px;
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
 }
 .success a {
     color: #5ca000;
@@ -136,7 +137,7 @@ label {
     height: 40px;
     line-height: 42px;
     margin: 0 5px 0 0;
-    /* padding: 0 22px; */
+    padding: 0 22px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -188,22 +189,22 @@ h1.title {
     font-size: 36px;
     line-height: 36px;
     margin: 20px 0;
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     color: #111111;
 }
 .byline {
     font-size: 18px;
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     color: #111111;
 }
 .description,
 label,
 .fake-label {
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     color: #111111;
 }
 .button {
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     color: #FFFFFF;
     background-color: #8BB3D2;
 }
@@ -304,7 +305,7 @@ label,
 }
 #view-messages-link {
     font-size: 16px;
-    font-family: Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
     text-decoration: none;
     color: #ED1F24;
 }
