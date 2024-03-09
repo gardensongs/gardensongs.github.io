@@ -189,7 +189,8 @@
     background-image: url("../backgrounds/background_2.jpg");
   }
   #left, #right, #rightcontainer {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     -ms-overflow-style: none;
     transition: 0.25s;
   

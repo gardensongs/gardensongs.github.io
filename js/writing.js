@@ -49,7 +49,8 @@ function displayText(){
         success: function(markdown){
             let html = md.render(markdown);
             $(`#rightcontainer`).html(html);
-            $(`#container`).scrollTop(0);
+            $(`#rightcontainer`).scrollTop(0);
+            $(`#right`).scrollTop(0);
             $("div.container").find("p").addClass('bodytext');
             $("p.bodytext").find("a").attr("target","_blank");
         }
@@ -79,7 +80,8 @@ $(".letter-row").click(function(){
         success: function(markdown){
             let html = md.render(markdown);
             $(`#rightcontainer`).html(html);
-            $(`#container`).scrollTop(0);
+            $(`#rightcontainer`).scrollTop(0);
+            $(`#right`).scrollTop(0);
             $("div.container").find("p").addClass('bodytext');
             $("p.bodytext").find("a").attr("target","_blank");
         }
