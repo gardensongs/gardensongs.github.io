@@ -36,17 +36,19 @@
   
   h1 {
     max-width: 900px;
-    margin: auto;
+    margin: 0;
     padding: 20px 20px 20px 20px;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: normal;
     /* text-decoration: underline; */
   }
 
   h5{
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin: 0;
+    padding-right: 2px;
   }
 
   h6 {
@@ -165,7 +167,7 @@
     overflow-x: hidden;
     height: 100vh;
     display: flex;
-    font-size: 1.4rem;
+    font-size: 20px;
     background-image: url("../backgrounds/background_2.jpg") 
   }
   
