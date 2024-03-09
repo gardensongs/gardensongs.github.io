@@ -44,12 +44,21 @@
                 <script>
                     const scriptURL = 'https://script.google.com/macros/s/AKfycbwphiQqAK8G0WJTHIwcgSgbs-_2HtubQe4rz0XJLFwgs95uZ-liCRMhVgTWd_zx0mLooA/exec'
                     const form = document.forms['submit-to-google-sheet']
+
+                    function validateEmail(emailaddress) {
+                        var re = /\S+@\S+\.\S+/;
+                        return re.test(emailaddress);
+                    }
                   
                     form.addEventListener('submit', e => {
                       e.preventDefault()
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      const email = document.getElementById('email');
+                      if (validateEmail(email)) {
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                         .then(response => console.log('Success!', response))
                         .catch(error => console.error('Error!', error.message))
+                      }
+                      
                     })
                   </script>
 
