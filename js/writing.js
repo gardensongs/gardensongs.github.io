@@ -49,6 +49,7 @@ function displayText(){
         success: function(markdown){
             let html = md.render(markdown);
             $(`#rightcontainer`).html(html);
+            $(`#rightcontainer`).scrollTop(0);
             $("div.container").find("p").addClass('bodytext');
             $("p.bodytext").find("a").attr("target","_blank");
         }
