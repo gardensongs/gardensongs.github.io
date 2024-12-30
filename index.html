@@ -14,7 +14,6 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/index.css">
 
-        <!-- <script src="js/success.js"></script> -->
     </head>
     <body>
         <div class="wrapper" id="main">
@@ -47,6 +46,7 @@
                         form.addEventListener("submit", function(e) {
                             e.preventDefault();
                             const data = new FormData(form);
+                            data.append("actionID", "subscribe");
                             const action = e.target.action;
                             fetch(action, {
                                 method: 'POST',
