@@ -41,43 +41,6 @@
 	                    
                 </form>
 
-                <!-- <script>
-                    window.addEventListener("load", function() {
-                        const form = document.getElementById('signup-form');
-                        form.addEventListener("submit", function(e) {
-                            e.preventDefault();
-                            const data = new FormData(form);
-                            const action = e.target.action;
-                            fetch(action, {
-                                method: 'POST',
-                                body: data,
-                            })
-                            .then(() => {
-                                alert("you've successfully subscribed! thanks for joining me ✿");
-                            })
-                        });
-                    });
-                </script> -->
-                <!-- <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwphiQqAK8G0WJTHIwcgSgbs-_2HtubQe4rz0XJLFwgs95uZ-liCRMhVgTWd_zx0mLooA/exec'
-                    const form = document.forms['submit-to-google-sheet']
-
-                    function validateEmail(emailaddress) {
-                        var re = /\S+@\S+\.\S+/;
-                        return re.test(emailaddress);
-                    }
-                  
-                    form.addEventListener('submit', e => {
-                      e.preventDefault()
-                      const email = document.getElementById('email');
-                      if (validateEmail(email)) {
-                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => console.log('Success!', response))
-                        .catch(error => console.error('Error!', error.message))
-                      }
-                      
-                    })
-                  </script> -->
 
             </div>
         </div>
