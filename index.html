@@ -49,6 +49,7 @@
                             data.append("actionID", "subscribe");
                             const action = e.target.action;
                             fetch(action, {
+                                mode: "no-cors",
                                 redirect: "follow",
                                 method: 'POST',
                                 body: data,
