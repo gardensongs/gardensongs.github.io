@@ -49,8 +49,12 @@
                             data.append("actionID", "subscribe");
                             const action = e.target.action;
                             fetch(action, {
+                                redirect: "follow",
                                 method: 'POST',
                                 body: data,
+                                headers: {
+                                    "Content-Type": "text/plain;charset=utf-8",
+                                },
                             })
                             .then(() => {
                                 console.log(data);
