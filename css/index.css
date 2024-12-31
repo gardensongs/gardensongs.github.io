@@ -201,6 +201,7 @@ h1.title {
 label,
 .fake-label {
     font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    font-size: 16px;
     color: #111111;
 }
 .button {
@@ -314,7 +315,16 @@ label,
     color: #000;
     text-decoration: none;
 }
-
+#description-link {
+    font-family: 'Perpetua', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+    text-decoration: none;
+    color: #ED1F24;
+}
+#description-link:hover,
+#description:focus {
+    color: #000;
+    text-decoration: none;
+}
 .privacy-policy p{
     font-size: 14px;
     margin-top:30px;
