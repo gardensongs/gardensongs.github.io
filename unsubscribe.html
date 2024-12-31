@@ -25,7 +25,7 @@
                 </div> -->
                 <div class="description">here you can unsubscribe - no hard feelings!</div>
                 <br>
-                <form name='submit-to-google-sheet' id="unsubscribe-form" method="POST" action="https://script.google.com/macros/s/AKfycbwphiQqAK8G0WJTHIwcgSgbs-_2HtubQe4rz0XJLFwgs95uZ-liCRMhVgTWd_zx0mLooA/exec">
+                <form name='submit-to-google-sheet' id="unsubscribe-form" method="POST" action="https://script.google.com/macros/s/AKfycbwSMbkCXwJ8W8HVsvx3mi8YQqCyUezZcZ5FP_gCGR9BYg8lFk5qB0z4ZN9GLiw1F4pH/exec">
 	                    
 	                    <div class="email-group">
                             <label for="email" class="sr-only">Email</label>
@@ -53,8 +53,6 @@
                                 },
                             })
                             .then(() => {
-                                console.log(data);
-                                console.log(e.parameter);
                                 alert("you've successfully unsubscribed! bye for now ✿");
                             })
                         });
