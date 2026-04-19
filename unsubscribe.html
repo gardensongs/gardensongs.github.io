@@ -52,8 +52,10 @@
                             data.append("actionID", "unsubscribe");
                             const action = e.target.action;
                             fetch(action, {
-                                method: 'POST',
-                                body: data,
+                                redirect: 'follow',
+								method: 'POST',
+                                body: JSON.stringify(data),
+								headers: {"Content-Type": "text/plain;charset=utf-8"}
                             })
                             .then(() => {
                                 alert("you've successfully unsubscribed! bye for now ✿");
