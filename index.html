@@ -52,8 +52,10 @@
                             data.append("actionID", "subscribe");
                             const action = e.target.action;
                             fetch(action, {
+								redirect: 'follow',
                                 method: 'POST',
                                 body: data,
+								headers: {"Content-Type": "text/plain;charset=utf-8",},
                             })
                             .then(() => {
                                 alert("you've successfully subscribed! thank you for joining me ❀");
