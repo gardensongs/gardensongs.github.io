@@ -94,6 +94,7 @@ $(".letter-row").click(function(){
         var formData = new FormData(form[0]);
         $.ajax({
             url: form.attr('action'),
+            redirect: 'follow',
             type: 'POST',
             data: formData,
             processData: false,
