@@ -54,7 +54,7 @@
                             fetch(action, {
 								redirect: 'follow',
                                 method: 'POST',
-                                body: data,
+                                body: JSON.stringify(data),
 								headers: {"Content-Type": "text/plain;charset=utf-8",},
                             })
                             .then(() => {
