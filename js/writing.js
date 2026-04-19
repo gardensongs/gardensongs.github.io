@@ -94,8 +94,10 @@ $(".letter-row").click(function(){
         var formData = new FormData(form[0]);
         $.ajax({
             url: form.attr('action'),
+            redirect: 'follow',
             type: 'POST',
-            data: formData,
+            data: JSON.stringify(formData),
+            headers: {"Content-Type": "text/plain;charset=utf-8",},
             processData: false,
             contentType: false,
             success: function(data) {
